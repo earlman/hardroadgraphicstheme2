@@ -1,0 +1,16 @@
+body{font:100% Helvetica,sans-serif}
+.main-navigation{background-color:#4e0b2a}
+.main-navigation ul li a{font-family:Helvetica;font-size:28px;text-transform:uppercase;color:white}
+.custom-logo{width:700px;padding-top:50px;padding-left:20px}
+.header_image{width:450px;position:absolute;z-index:-1;right:1px}
+.site-branding{height:250px;padding:0;position:relative}
+.site-title{display:none}
+.site-description{display:none}
+.site-info{height:350px;border-top:12px solid #4e0b2a}
+.site-footer{margin-top:80px}
+#footer-sidebar{display:grid;grid-template-columns:[contact] 3fr [empty] 3fr [social] 3fr;padding:0 50px 0 50px}
+#footer-sidebar h3{font-family:Helvetica;font-size:28px;text-transform:uppercase}
+#footer-sidebar p,li{font-size:28px;font-family:Helvetica;list-style-type:none;line-height:1.5em;margin:0}
+#footer-sidebar1{grid-column:contact}
+#footer-sidebar3{grid-column:social}
+#footer-sidebar3 ul{padding:0;margin:0;-webkit-columns:2;columns:2}
