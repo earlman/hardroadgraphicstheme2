@@ -918,7 +918,7 @@ a:hover, a:active {
 /* adding the fonts here i guess */
 @font-face {
     font-family: Helvetica;
-    src: url('fonts/Helvetica.woff');
+    src: url('assets/fonts/Helvetica.woff');
     font-weight: normal;
 }
 

@@ -634,8 +634,10 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-## Menus
+## Menus 
 --------------------------------------------------------------*/
+
+/* GETTING RID OF THIS CUZ ITS MESSING WITH MY STUFF
 .main-navigation {
 	clear: both;
 	display: block;
@@ -688,7 +690,6 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-/* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -725,6 +726,7 @@ a:hover, a:active {
 	width: 50%;
 }
 
+*/
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

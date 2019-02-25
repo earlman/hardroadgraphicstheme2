@@ -1,19 +1,24 @@
 @import url(assets/css/style_underscores.css);.content{display:grid;width:1200px;margin:auto;grid-template-columns:5fr 3fr 2fr 700px 2fr 3fr 5fr}
 .site{display:contents}
-h1,h2,h3,h4,h5,h6{clear:both;text-transform:uppercase;color:#4e0b2a}
+@font-face{font-family:Helvetica;src:url("assets/fonts/Helvetica.woff");font-weight:normal}
+p{font-family:Helvetica}
+h1,h2,h3,h4,h5,h6{font-family:Helvetica;clear:both;text-transform:uppercase;color:#4e0b2a}
 .site-header{display:contents}
 .site-branding{grid-column:3 / 6;grid-row:1}
 .site-header img{display:none}
 .main-navigation{background-color:#4e0b2a;grid-column:3 / 6;grid-row:2;height:60px}
 .main-navigation{width:100%}
-.main-navigation li{float:center}
-.main-navigation div{width:80%;height:100%}
-#primary-menu{height:inherit}
-#primary-menu li a{line-height:60px;font-size:1.5em}
-#primary-menu li a:hover{background:white;color:#4e0b2a}
+.menu-menu-1-container{width:80%;margin:auto;display:grid}
+.menu{display:-webkit-box;display:-ms-flexbox;display:flex;flex-direciton:row;margin:0;padding:0;list-style:none}
+.menu li{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;text-align:center}
+.menu li a{line-height:60px;font-size:1.5em;color:white;padding:0 30px 0 30px;text-transform:uppercase;underline:none}
+.menu li a:hover{background:white;color:#4e0b2a}
+.menu-toggle{display:none}
 .site-content{display:contents}
 .content-area{display:contents}
 .site-main{grid-column:3 / 6}
 .page-title::after{content:" //"}
 .site-footer{grid-column:3 / 6}
 .site-info{height:350px;border-top:12px solid #4e0b2a}
+#footer-sidebar{display:grid;grid-template-columns:1fr 1fr 1fr}
+#footer-sidebar1 p{margin:0}
