@@ -8,7 +8,7 @@ $secondary: #f8f8f8
 // Defining variables for layout. I could probably keep something like this for all sites
 // Waiting Hopefully for CSS Subgrid to come out soon
 $maingrid:  5fr 3fr 2fr minmax(500px, 700px) 2fr 3fr 5fr
-$headerfooter: 80%
+$headerfooter: 65%
 $normal: 4
 $average: #{3} / #{6}
 $wider: #{2} / #{7}
@@ -31,7 +31,7 @@ $full: #{1} / #{8}
     src: url('assets/fonts/Helvetica.woff')
     font-weight: normal
 
-p
+p, a
     font-family: Helvetica
 
 h1, h2, h3, h4, h5, h6
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6
 
         a
             line-height: 60px
-            font-size: 1.5em
+            font-size: 1.2em
             color: white
             text-transform: uppercase
             text-decoration: none
@@ -109,12 +109,16 @@ h1, h2, h3, h4, h5, h6
         grid-column: $average
         padding: 2em 0 4em
 
+    .hardroad-graphics
+        display: none
+
     .featured-products
         grid-column: $full
         background-color: $secondary
         grid-template-columns: $maingrid
         display: grid
-        box-shadow: inset 0 7px 10px -10px rgba(0, 0, 0, 0.2), inset 0 -7px 10px -10px rgba(0, 0, 0, 0.2)
+        
+        box-shadow: inset 0 6px 6px -4px rgba(0, 0, 0, 0.5), inset 0 -7px 10px -5px rgba(0, 0, 0, 0.2)
 
         h1
             grid-column: $average
