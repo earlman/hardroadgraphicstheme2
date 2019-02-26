@@ -12,13 +12,13 @@ module.exports = {
 	// Project options.
 	projectURL: 'http://hardroad-graphics-dev.local/', // Local project URL of your already running WordPress site. Could be something like wpgulp.local or localhost:3000 depending upon your local WordPress setup.
 	productURL: './', // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
-	browserAutoOpen: false,
+	browserAutoOpen: true,
 	injectChanges: true,
 
 	// Style options.
 	styleSRC: './assets/css/style.sass', // Path to main .scss file.
 	styleDestination: './', // Path to place the compiled CSS file. Default set to root folder.
-	outputStyle: 'compact', // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
+	outputStyle: 'expanded', // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
 	errLogToConsole: true,
 	precision: 10,
 
