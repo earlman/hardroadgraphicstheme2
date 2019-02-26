@@ -19,17 +19,45 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php
-            $pages = get_pages(array('sort_column' => 'menu_order')); 
-            foreach ($pages as $page_data) {
-                $content = apply_filters('the_content', $page_data->post_content); 
-                $title = $page_data->post_title; 
-                echo "<h1 class=\"page-title\">", $title, "</h1>" ;
+    <?php
+        $hardroadgraphics = new WP_Query(  array( 'pagename' => 'hardroad-graphics' )  );
+        $hardroadgraphics->the_post();
+        $name=get_post()->post_name;
+        echo "<div class=\"page ", $name, "\">";
+        echo "<h1 class=\"page-title\">", the_title(), "</h1>" ;
+        the_content();
+        echo '</div>';
+        wp_reset_postdata();
 
-                echo $content; 
-                
-            }
-		?>
+        $featuredproducts = new WP_Query(  array( 'pagename' => 'featured-products' )  );
+        $featuredproducts->the_post();
+        $name=get_post()->post_name;
+        echo "<div class=\"page ", $name, "\">";
+        echo "<h1 class=\"page-title\">", the_title(), "</h1>" ;
+        echo "<div class=product_gallery>";
+        the_content();
+        echo "</div>";
+        echo '</div>';
+        wp_reset_postdata();
+
+        $contactus = new WP_Query(  array( 'pagename' => 'contact-us' )  );
+        $contactus->the_post();
+        $name=get_post()->post_name;
+        echo "<div class=\"page ", $name, "\">";
+        echo "<h1 class=\"page-title\">", the_title(), "</h1>" ;
+        the_content();
+        echo '</div>';
+        wp_reset_postdata();
+        
+        $aboutus = new WP_Query(  array( 'pagename' => 'about-us' )  );
+        $aboutus->the_post();
+        $name=get_post()->post_name;
+        echo "<div class=\"page ", $name, "\">";
+        echo "<h1 class=\"page-title\">", the_title(), "</h1>" ;
+        the_content();
+        echo '</div>';
+        wp_reset_postdata();
+    ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
