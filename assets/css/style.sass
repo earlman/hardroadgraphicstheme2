@@ -57,13 +57,34 @@ h1, h2, h3, h4, h5, h6
 .site-header
     display: contents
 
-    img
-        display: none
+
+
 
 // ## Branding
 .site-branding
     grid-column: $wider 
     grid-row: 1
+    height: 5rem
+
+    @media only screen and (min-width: 992px) 
+        height: 8rem
+    
+
+    .site-title,
+    .site-description
+        display: none
+    
+    .custom-logo
+        width: 250px
+        margin-left: 10%
+        margin-top: 6%
+
+        @media only screen and (min-width: 992px) 
+            width: 400px
+
+
+    .header_image
+        display: none
 
 
 // ## Menu

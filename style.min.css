@@ -4,8 +4,10 @@
 p,a{font-family:Helvetica}
 h1,h2,h3,h4,h5,h6{font-family:Helvetica;clear:both;text-transform:uppercase;color:#4e0b2a}
 .site-header{display:contents}
-.site-header img{display:none}
-.site-branding{grid-column:2 / 7;grid-row:1}
+.site-branding{grid-column:2 / 7;grid-row:1;height:5rem}
+.site-branding .site-title,.site-branding .site-description{display:none}
+.site-branding .custom-logo{width:250px;margin-left:10%;margin-top:6%}
+.site-branding .header_image{display:none}
 .main-navigation{background-color:#4e0b2a;grid-column:1 / 8;grid-row:2;height:60px;width:100%}
 .menu-menu-1-container{width:65%;margin:auto;display:grid}
 .menu{display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:0;list-style:none}
@@ -36,3 +38,6 @@ h1,h2,h3,h4,h5,h6{font-family:Helvetica;clear:both;text-transform:uppercase;colo
 #footer-sidebar3 div,#footer-sidebar3 ul{margin:0;padding:0}
 #footer-sidebar3 ul{-webkit-columns:2;columns:2;list-style:none}
 #footer-sidebar3 ul a{text-decoration:none;color:white}
+@media only screen and (min-width:992px){.site-branding{height:8rem}
+.site-branding .custom-logo{width:400px}
+}
