@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5, h6 {
     }
     }
 
-
   .site-title, .site-description {
     display: none;
   }
@@ -82,13 +81,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10%;
     margin-top: 6%;
   }
-      
     @media only screen and (min-width: 992px) {
         .site-branding .custom-logo {
             width: 400px;
         }
     }
-
 
   .header_image {
     display: none;
@@ -117,8 +114,6 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 
   li {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
     flex-grow: 1;
     text-align: center;
 
@@ -148,91 +143,97 @@ h1, h2, h3, h4, h5, h6 {
 // # Content
 .site-content, .content-area {
   display: contents;
-}    
-.site-main {
-  display: contents;
-  .page {
-    grid-column: 3 / 6;
-    padding: 2em 0 4em;
-  }
-  .hardroad-graphics {
-    display: none;
-  }
-  .featured-products {
-    grid-column: 1 / 8;
-    background-color: #f8f8f8;
-    grid-template-columns: 5fr 3fr 2fr minmax(500px, 700px) 2fr 3fr 5fr;
-    display: grid;
-    -webkit-box-shadow: inset 0 6px 6px -4px rgba(0, 0, 0, 0.5), inset 0 -7px 10px -5px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 6px 6px -4px rgba(0, 0, 0, 0.5), inset 0 -7px 10px -5px rgba(0, 0, 0, 0.2);
-    h1 {
-      grid-column: 3 / 6;
-    }
-    .product_gallery {
-      grid-column: 3 / 6;
-      display: grid;
-      grid-template-columns: 0.2fr repeat(2, 1fr) 0.2fr;
-      grid-gap: 6% 4%;
-      figure {
-        background-color: white;
-        margin: 0;
-        -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.15);
-        box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.15);
-        border-radius: 2px;
-      }
-    }
-  }
-}
-    // ## Pages
+}   
 
-@media only screen and (min-width: 992px) {
-  .site-main .featured-products .product_gallery {
-    grid-template-columns: 0.2fr repeat(4, 1fr) 0.2fr;
-  }
+.site-main {
+    display: contents;
+    .page {
+        grid-column: 3 / 6;
+        padding: 2em 0 4em;
+    }
+    .hardroad-graphics {
+        display: none;
+    }
+    .featured-products {
+        grid-column: $full;
+        background-color: #f8f8f8;
+        grid-template-columns: 5fr 3fr 2fr minmax(500px, 700px) 2fr 3fr 5fr;
+        display: grid;
+        box-shadow: inset 0 6px 6px -4px rgba(0, 0, 0, 0.5), inset 0 -7px 10px -5px rgba(0, 0, 0, 0.2);
+
+        h1 {
+            grid-column: $average;
+        }
+
+        .product_gallery {
+            grid-column: $average;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns:  repeat(2, 1fr);
+            grid-gap: 6% 4%;
+            
+            @media only screen and (min-width: 992px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            figure {
+                background-color: white;
+                margin: 0;
+                box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.15);
+                border-radius: 2px;
+            }
+        
+            img {
+                padding: 15px 8px;
+            }
+            
+        }
+    }
 }
 .page-title::after {
   content: " //";
 }
+
+// # Footer
 .site-footer {
-  display: contents;
+    display: contents;
 }
 .site-info {
-  height: 350px;
-  background-color: #4e0b2a;
-  color: white;
-  grid-column: 1 / 8;
+    height: 200px;
+    background-color: #4e0b2a;
+    color: white;
+    grid-column: 1 / 8;
 }
 #footer-sidebar {
-  width: 65%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
 }
 #footer-sidebar1 {
-  p {
-    margin: 0;
-  }
-  grid-column: 2;
+    p {
+        margin: 0;
+    }
+    grid-column: 2;
 }
 #footer-sidebar2 {
   grid-column: 3;
 }
 #footer-sidebar3 {
-  grid-column: 4;
-  text-align: right;
-  div {
-    margin: 0;
-    padding: 0;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    -webkit-columns: 2;
-    columns: 2;
-    list-style: none;
-    a {
-      text-decoration: none;
-      color: white;
+    grid-column: 4;
+    text-align: right;
+    div {
+        margin: 0;
+        padding: 0;
     }
-  }
+    ul {
+        margin: 0;
+        padding: 0;
+        columns: 2;
+        list-style: none;
+        a {
+        text-decoration: none;
+        color: white;
+        }
+    }
 }
