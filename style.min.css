@@ -16,28 +16,26 @@ h1,h2,h3,h4,h5,h6{font-family:Helvetica;clear:both;text-transform:uppercase;colo
 .menu li:hover{background:white;color:#4e0b2a}
 .menu li:hover a{color:#4e0b2a}
 .menu-toggle{display:none}
-.site-content{display:contents}
-.content-area{display:contents}
+.site-content,.content-area{display:contents}
 .site-main{display:contents}
 .site-main .page{grid-column:3 / 6;padding:2em 0 4em}
 .site-main .hardroad-graphics{display:none}
 .site-main .featured-products{grid-column:1 / 8;background-color:#f8f8f8;grid-template-columns:5fr 3fr 2fr minmax(500px,700px) 2fr 3fr 5fr;display:grid;-webkit-box-shadow:inset 0 6px 6px -4px rgba(0,0,0,0.5),inset 0 -7px 10px -5px rgba(0,0,0,0.2);box-shadow:inset 0 6px 6px -4px rgba(0,0,0,0.5),inset 0 -7px 10px -5px rgba(0,0,0,0.2)}
 .site-main .featured-products h1{grid-column:3 / 6}
-.site-main .featured-products .product_gallery{grid-column:3 / 6;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));grid-gap:6% 4%}
+.site-main .featured-products .product_gallery{grid-column:3 / 6;display:grid;grid-template-columns:.2fr repeat(2,1fr) .2fr;grid-gap:6% 4%}
 .site-main .featured-products .product_gallery figure{background-color:white;margin:0;-webkit-box-shadow:1px 2px 6px rgba(0,0,0,0.1),0 2px 6px rgba(0,0,0,0.15);box-shadow:1px 2px 6px rgba(0,0,0,0.1),0 2px 6px rgba(0,0,0,0.15);border-radius:2px}
-.site-main .featured-products .product_gallery figure img{padding:15px 8px}
-.site-main .featured-products .product_gallery figure figcaption{margin:0 0 .5em}
 .page-title::after{content:" //"}
 .site-footer{display:contents}
 .site-info{height:350px;background-color:#4e0b2a;color:white;grid-column:1 / 8}
 #footer-sidebar{width:65%;margin:auto;display:grid;grid-template-columns:1fr 3fr 3fr 3fr 1fr}
-#footer-sidebar1 p{margin:0}
 #footer-sidebar1{grid-column:2}
+#footer-sidebar1 p{margin:0}
 #footer-sidebar2{grid-column:3}
 #footer-sidebar3{grid-column:4;text-align:right}
-#footer-sidebar3 div,#footer-sidebar3 ul{margin:0;padding:0}
-#footer-sidebar3 ul{-webkit-columns:2;columns:2;list-style:none}
+#footer-sidebar3 div{margin:0;padding:0}
+#footer-sidebar3 ul{margin:0;padding:0;-webkit-columns:2;columns:2;list-style:none}
 #footer-sidebar3 ul a{text-decoration:none;color:white}
-@media only screen and (min-width:992px){.site-branding{height:8rem}
-.site-branding .custom-logo{width:400px}
+@media only screen and (min-width:992px){.site-branding .site-branding{height:8rem}
+.site-branding .site-branding .custom-logo{width:400px}
+.site-main .featured-products .product_gallery{grid-template-columns:.2fr repeat(4,1fr) .2fr}
 }
