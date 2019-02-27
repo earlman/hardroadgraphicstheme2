@@ -121,6 +121,10 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   margin: auto;
   display: grid;
 }
+ 
+.sticky {
+    position: fixed;
+}
 
 .menu {
   display: grid;
