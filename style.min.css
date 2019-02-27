@@ -9,7 +9,7 @@ button,input[type="button"],input[type="reset"],input[type="submit"]{background-
 .site-branding .site-title,.site-branding .site-description{display:none}
 .site-branding .custom-logo{width:250px;margin-left:10%;margin-top:6%}
 .site-branding .header_image{display:none}
-.main-navigation{background-color:#4e0b2a;grid-column:1 / 8;grid-row:2;height:60px;width:100%}
+.main-navigation{background-color:#4e0b2a;grid-column:1 / 8;grid-row:2;height:60px;width:100%;z-index:4}
 .menu-menu-1-container{width:65%;margin:auto;display:grid}
 .sticky{position:fixed}
 .menu{display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:0;list-style:none}
