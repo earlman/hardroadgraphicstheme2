@@ -81,9 +81,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   grid-column: 2 / 7;
   grid-row: 1;
   height: 150px;
-  justify-self: center;
-  align-self: end;
-  
+  justify-self: center;  
 
     @media only screen and (min-width: 992px) {
     .site-branding {
@@ -97,10 +95,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
   .custom-logo {
     width: 250px;
-    margin-left: 10%;
-    margin-top: 6%;
+
   }
-    @media only screen and (min-width: 992px) {
+    @media only screen and (max-width: 992px) {
         .site-branding .custom-logo {
             width: 400px;
         }
@@ -121,7 +118,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 #primary-menu {
-  width: 65%;
+  width: 55%;
   margin: auto;
   display: grid;
 }
