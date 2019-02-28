@@ -80,7 +80,10 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 .site-branding {
   grid-column: 2 / 7;
   grid-row: 1;
-  height: 5rem;
+  height: 150px;
+  justify-self: center;
+  align-self: end;
+  
 
     @media only screen and (min-width: 992px) {
     .site-branding {
