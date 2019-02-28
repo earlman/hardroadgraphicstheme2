@@ -20,19 +20,20 @@ get_header();
 		<main id="main" class="site-main">
 
     <?php
+    /*
         $hardroadgraphics = new WP_Query(  array( 'pagename' => 'hardroad-graphics' )  );
         $hardroadgraphics->the_post();
         $name=get_post()->post_name;
-        echo "<div class=\"page ", $name, "\">";
+        echo "<div class=\"page \" id=\"", $name, "\">";
         echo "<h1 class=\"page-title\">", the_title(), "</h1>" ;
         the_content();
         echo '</div>';
         wp_reset_postdata();
-
+    */
         $featuredproducts = new WP_Query(  array( 'pagename' => 'featured-products' )  );
         $featuredproducts->the_post();
         $name=get_post()->post_name;
-        echo "<div class=\"page ", $name, "\">";
+        echo "<div class=\"page \" id=\"", $name, "\">";
         echo "<h1 class=\"page-title\">", the_title(), "</h1>" ;
         echo "<div class=product_gallery>";
         the_content();
@@ -43,7 +44,7 @@ get_header();
         $contactus = new WP_Query(  array( 'pagename' => 'contact-us' )  );
         $contactus->the_post();
         $name=get_post()->post_name;
-        echo "<div class=\"page ", $name, "\">";
+        echo "<div class=\"page \" id=\"", $name, "\">";
         echo "<h1 class=\"page-title\">", the_title(), "</h1>" ;
         the_content();
         echo '</div>';
@@ -52,7 +53,7 @@ get_header();
         $aboutus = new WP_Query(  array( 'pagename' => 'about-us' )  );
         $aboutus->the_post();
         $name=get_post()->post_name;
-        echo "<div class=\"page ", $name, "\">";
+        echo "<div class=\"page \" id=\"", $name, "\">";
         echo "<h1 class=\"page-title\">", the_title(), "</h1>" ;
         the_content();
         echo '</div>';

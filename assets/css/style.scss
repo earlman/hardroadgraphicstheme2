@@ -117,7 +117,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   z-index: 4;
 }
 
-.menu-menu-1-container {
+#primary-menu {
   width: 65%;
   margin: auto;
   display: grid;
@@ -128,35 +128,44 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 .menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-  li {
-    flex-grow: 1;
-    text-align: center;
+    li {
+        flex-grow: 1;
+        text-align: center;
 
-    a {
-      line-height: 60px;
-      font-size: 1.2em;
-      color: white;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
+        a {
+        line-height: 60px;
+        font-size: 1.2em;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        }
 
-    &:hover {
-      background: white;
-      color: $primary;
-
-      a {
+        /*
+        &:hover {
+        background: white;
         color: $primary;
-      }
-    }
-  }
-}
 
+        a {
+            color: $primary;
+        }
+        }
+        */
+    }
+    .active {
+        background-color: white;
+
+        a{
+            color: $primary ; 
+        }
+    }
+}
 
 .menu-toggle {
   display: none;
@@ -172,12 +181,12 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         grid-column: 3 / 6;
         padding: 2em 0 4em;
     }
-    .hardroad-graphics {
+    #hardroad-graphics {
         display: none;
     }
 
     // ## Featured Products Page
-    .featured-products {
+    #featured-products {
         grid-column: $full;
         background-color: #f8f8f8;
         grid-template-columns: 5fr 3fr 2fr minmax(500px, 700px) 2fr 3fr 5fr;
@@ -218,7 +227,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         }
     }
 
-    .contact-us {
+    #contact-us {
         grid-column: $average;
 
         div[role=form] {
@@ -264,7 +273,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 }
 
-.about-us {
+#about-us {
     font-size: 1.2em;
 }
 
