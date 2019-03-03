@@ -29,7 +29,9 @@
 			<?php
             the_custom_logo();
             ?>
-            <img class="header_image" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+            <!--<img class="header_image" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">-->
+            <img class="header_image" src="<?php echo get_bloginfo('template_url') ?>/assets/img/roadlogo.png"/>
+
             <?php
             if ( is_front_page() && is_home() ) :
 				?>
