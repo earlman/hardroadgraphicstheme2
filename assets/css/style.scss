@@ -14,7 +14,7 @@
 
 //importing underscores first 
 $font-stack: Helvetica, sans-serif;
-$primary: #4e0b2a;
+$primary: #500000;
 $accent: #FFB612;
 $secondary: #f8f8f8;
 
@@ -210,7 +210,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
     .product_gallery {
         grid-column: content;
-        display: none;
+        display: grid;
         grid-template-columns:  repeat(2, 1fr);
         grid-gap: 6% 3%;
         
@@ -240,5 +240,61 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 // # Footer
 
 .site-footer {
-    grid-column: contents;
+    grid-column: $full;
+    display: grid;
+    grid-template-columns: $maingrid;
+    background-color: $primary;
+    color: white;
+    
+    .site-info {
+        grid-column: contents;
+        display: flex;
+
+        .widget-title {
+            display: none;
+        }
+
+        #footer-sidebar {
+            display: contents;
+        }
+
+        #footer-sidebar > div { //footer widgets have no class so this selects them
+            flex: 1;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #footer-sidebar1 {
+            p {
+                margin: 0;
+            }
+            grid-column: 2;
+        }
+        
+        //individual widget styling
+        #footer-sidebar3 {
+            text-align: right;
+            div {
+                margin: 0;
+                padding: 0;
+                width: 80%;
+                float: right;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                columns: 2;
+                list-style: none;
+                a {
+                text-decoration: none;
+                color: white;
+                }
+            }
+        }
+
+    }
+
+
 }
+
+
