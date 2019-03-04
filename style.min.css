@@ -1,4 +1,4 @@
-@import url(assets/css/style_underscores.css);.content{display:grid;grid-template-columns:1fr [contents] minmax(640px,900px) 1fr}
+@import url(assets/css/style_underscores.css);.content{display:grid;grid-template-columns:1fr [contents] minmax(640px,900px) 1fr;grid-template-rows:100px auto auto}
 .site{display:contents}
 @font-face{font-family:Helvetica;src:url("assets/fonts/Helvetica.woff");font-weight:normal}
 p,a{font-family:Helvetica}

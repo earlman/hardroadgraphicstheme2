@@ -29,6 +29,7 @@ $full: #{1 / 4};
 .content {
   display: grid;
   grid-template-columns: $maingrid;
+  grid-template-rows: 100px auto auto;
 }
 
 .site {
