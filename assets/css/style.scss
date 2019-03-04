@@ -96,7 +96,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
             height: auto;
             grid-column: 2;
             grid-row: 1;
-        
+            padding-top: 20px;
         }
 
         .header_image {
@@ -141,21 +141,28 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
             padding: 0;
             list-style: none;
             width: 50%;
+            height: 100%;
             justify-self: end;
+            
+
+
 
             li {
                 flex-grow: 1;
                 text-align: center;
+                height: 100%;
 
                 a {
-                line-height: 60px;
                 font-size: 1em;
+                line-height: 45px;
                 color: white;
                 text-transform: uppercase;
                 text-decoration: none;
                 display: block;
                 }
             }
+
+
             .active {
                 background-color: white;
 
