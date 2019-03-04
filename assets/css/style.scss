@@ -89,18 +89,19 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         grid-column: contents;
         display: grid;
         grid-template-columns: 3fr 2fr;
-        height: 110px;     
+        height: 90px;     
 
         .custom-logo-link {
-            height: 100px;
+            width: 320;
+            height: auto;
             grid-column: 2;
             grid-row: 1;
         
         }
 
         .header_image {
-            height: 170px;
-            width: auto;
+            height: 150px;
+            width: 380px;
             grid-column: 1;
             grid-row: 1;
             z-index: 4;
@@ -113,7 +114,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         grid-template-columns: $maingrid;
         display: grid;
         background-color: $primary;
-        height: 60px;
+        height: 50px;
         width: 100%;
         z-index: 3;
         border-top: 5px solid $accent;
@@ -139,7 +140,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
             margin: 0;
             padding: 0;
             list-style: none;
-            width: 60%;
+            width: 50%;
             justify-self: end;
 
             li {
@@ -148,7 +149,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
                 a {
                 line-height: 60px;
-                font-size: 1.2em;
+                font-size: 1em;
                 color: white;
                 text-transform: uppercase;
                 text-decoration: none;
