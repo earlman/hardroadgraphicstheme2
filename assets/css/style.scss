@@ -21,8 +21,8 @@ $secondary: #f8f8f8;
 // Filling row with background color
 // requires spanning background across grid and
 // recreating grid within row.
-$maingrid: 1fr [contents] minmax(640px, 900px) 1fr;
-$full: #{1 / 4};    
+$maingrid: 1fr 20px [contents] minmax(640px, 900px) 20px 1fr;
+$full: #{1 / 6};    
 
 // okay so where this doesnt work 
 
@@ -71,10 +71,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 // # Header
-
-
-
-
 .site-header {
     display: contents;
 
@@ -84,8 +80,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     .site-description {
         display: none;
     }
-
-
     .site-branding {
         grid-column: contents;
         display: grid;
@@ -98,6 +92,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
             grid-column: 2;
             grid-row: 1;
             padding-top: 20px;
+            justify-self: end;
         }
 
         .header_image {
@@ -112,7 +107,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
     .main-navigation {
         grid-column: $full;
-        grid-template-columns: $maingrid;
+        grid-template-columns: 1fr 20px [contents] minmax(590px, 900px) 55px [extraspace] 20px 1fr;
         display: grid;
         background-color: $primary;
         height: 50px;
@@ -133,7 +128,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         }
 
         .menu {
-            grid-column: contents;
+            grid-column: contents / extraspace;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             margin: 0;
