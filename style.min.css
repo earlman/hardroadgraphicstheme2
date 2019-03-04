@@ -1,7 +1,7 @@
 @import url(assets/css/style_underscores.css);.content{display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr;grid-template-rows:100px auto auto}
 .site{display:contents}
-@font-face{font-family:Helvetica;src:url("assets/fonts/Helvetica.woff");font-weight:normal}
-@font-face{font-family:HelveticaNeue;src:url("assets/fonts/HelveticaNeueMedium.woff");font-weight:normal}
+@font-face{font-family:Helvetica;src:url("assets/fonts/Helvetica.ttf");font-weight:normal}
+@font-face{font-family:HelveticaNeue;src:url("assets/fonts/HelveticaNeueMedium.ttf");font-weight:normal}
 p,a{font-family:Helvetica}
 h1,h2,h3,h4,h5,h6{font-family:HelveticaNeue;font-weight:normal;clear:both;text-transform:uppercase;color:#500000}
 button,input[type="button"],input[type="reset"],input[type="submit"]{background-color:#500000;color:white;width:120px;margin:auto;padding:10px;font-family:Helvetica;text-transform:uppercase;font-size:18px;vertical-align:middle;border-top:3px solid #ffb612;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);box-shadow:0 2px 5px 0 rgba(0,0,0,0.26)}
