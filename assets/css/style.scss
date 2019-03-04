@@ -65,7 +65,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     text-transform: uppercase;
     font-size: 18px;
     vertical-align: middle;
-    border-top: 5px solid $accent;
+    border-top: 3px solid $accent;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
 
 }
@@ -189,10 +190,17 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     
     .page-title {
         grid-column: contents;
-    
+        /*
         &:after {
             content: " //";
             color: $accent;
+        }
+        */
+        
+        &:before {
+            content: "\25a0   ";
+            color: $accent;
+            margin-left: -.95em;
         }
 
     }
@@ -241,6 +249,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         grid-auto-flow: column;
         grid-template-rows: repeat(4, auto);
         grid-template-columns: auto auto;
+        grid-gap: 15px 40px;
         grid-template: 
             "name message"
             "email message"
@@ -249,8 +258,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         p {
             margin: 0;
             
-            input, textarea {
+            input[type="text"], input[type="email"], textarea {
                 margin-top: 10px;
+                width: 100%;
             } 
         }
 
@@ -280,7 +290,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     grid-template-columns: $maingrid;
     background-color: $primary;
     color: white;
-    border-top: 3px solid $accent;
+    border-top: 5px solid $accent;
 
     
     .site-info {
