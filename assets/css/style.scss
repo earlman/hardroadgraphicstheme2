@@ -42,13 +42,20 @@ $full: #{1 / 6};
   src: url("assets/fonts/Helvetica.woff");
   font-weight: normal;
 }
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("assets/fonts/HelveticaNeueMedium.woff");
+  font-weight: normal;
+}
+
 
 p, a {
   font-family: Helvetica;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica;
+  font-family: HelveticaNeue;
+  font-weight: normal;
   clear: both;
   text-transform: uppercase;
   color: $primary;
@@ -185,7 +192,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 //will need to redefine if including background color
 .page {
-    padding: 20px 0 60px;
+    padding: 20px 0 40px;
     grid-column: contents;
     
     .page-title {
@@ -277,7 +284,14 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 #about-us {
+
+    grid-column: $full;
+    display: grid;
+    grid-template-columns: $maingrid;
+    border-top: 4px double rgba(0, 0, 0, 0.1);
+
     p {
+        grid-column: contents;
         font-size: 1.3rem;
     }
 }

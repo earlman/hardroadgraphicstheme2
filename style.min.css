@@ -1,8 +1,9 @@
 @import url(assets/css/style_underscores.css);.content{display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr;grid-template-rows:100px auto auto}
 .site{display:contents}
 @font-face{font-family:Helvetica;src:url("assets/fonts/Helvetica.woff");font-weight:normal}
+@font-face{font-family:HelveticaNeue;src:url("assets/fonts/HelveticaNeueMedium.woff");font-weight:normal}
 p,a{font-family:Helvetica}
-h1,h2,h3,h4,h5,h6{font-family:Helvetica;clear:both;text-transform:uppercase;color:#500000}
+h1,h2,h3,h4,h5,h6{font-family:HelveticaNeue;font-weight:normal;clear:both;text-transform:uppercase;color:#500000}
 button,input[type="button"],input[type="reset"],input[type="submit"]{background-color:#500000;color:white;width:120px;margin:auto;padding:10px;font-family:Helvetica;text-transform:uppercase;font-size:18px;vertical-align:middle;border-top:3px solid #ffb612;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);box-shadow:0 2px 5px 0 rgba(0,0,0,0.26)}
 .site-header{display:contents}
 .site-header .site-title{display:none}
@@ -22,7 +23,7 @@ button,input[type="button"],input[type="reset"],input[type="submit"]{background-
 .site-content{display:contents}
 .site-content .content-area{display:contents}
 .site-content .content-area .site-main{display:contents}
-.page{padding:20px 0 60px;grid-column:contents}
+.page{padding:20px 0 40px;grid-column:contents}
 .page .page-title{grid-column:contents}
 .page .page-title:before{content:"\25a0   ";color:#ffb612;margin-left:-.95em}
 #featured-products{grid-column:1 / 6;display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr;background-color:#f8f8f8;-webkit-box-shadow:inset 0 6px 6px -4px rgba(0,0,0,0.5),inset 0 -7px 10px -5px rgba(0,0,0,0.2);box-shadow:inset 0 6px 6px -4px rgba(0,0,0,0.5),inset 0 -7px 10px -5px rgba(0,0,0,0.2)}
@@ -35,7 +36,8 @@ button,input[type="button"],input[type="reset"],input[type="submit"]{background-
 #contact-us [role="form"] form p input[type="text"],#contact-us [role="form"] form p input[type="email"],#contact-us [role="form"] form p textarea{margin-top:10px;width:100%}
 #contact-us [role="form"] form :nth-last-child(3){grid-area:message}
 #contact-us [role="form"] form :nth-last-child(2){float:right;-ms-flex-item-align:end;align-self:end}
-#about-us p{font-size:1.3rem}
+#about-us{grid-column:1 / 6;display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr;border-top:4px double rgba(0,0,0,0.1)}
+#about-us p{grid-column:contents;font-size:1.3rem}
 .site-footer{grid-column:1 / 6;display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr;background-color:#500000;color:white;border-top:5px solid #ffb612}
 .site-footer .site-info{grid-column:contents;display:-webkit-box;display:-ms-flexbox;display:flex}
 .site-footer .site-info .widget-title{display:none}
