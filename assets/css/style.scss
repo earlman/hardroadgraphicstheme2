@@ -44,18 +44,24 @@ $full: #{1 / 6};
 }
 @font-face {
   font-family: HelveticaNeue;
-  src: url("assets/fonts/HelveticaNeueLight.ttf");
+  src: url("assets/fonts/HelveticaNeueThin.ttf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("assets/fonts/HelveticaNeueMedium.ttf");
   font-weight: normal;
 }
 
 
 p, a {
-  font-family: HelveticaNeue;
+    font-family: Helvetica;
+    font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: HelveticaNeue;
-  font-weight: normal;
+  font-weight: lighter;
   clear: both;
   text-transform: uppercase;
   color: $primary;
