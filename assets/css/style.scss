@@ -39,18 +39,18 @@ $full: #{1 / 6};
 
 @font-face {
   font-family: Helvetica;
-  src: url("assets/fonts/Helvetica.ttf");
+  src: url("assets/fonts/Helvetica.woff");
   font-weight: normal;
 }
 @font-face {
   font-family: HelveticaNeue;
-  src: url("assets/fonts/HelveticaNeueMedium.ttf");
+  src: url("assets/fonts/HelveticaNeueLight.ttf");
   font-weight: normal;
 }
 
 
 p, a {
-  font-family: Helvetica;
+  font-family: HelveticaNeue;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +68,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     width: 120px;
     margin: auto;
     padding: 10px;
-    font-family: Helvetica;
+    font-family: HelveticaNeue;
     text-transform: uppercase;
     font-size: 18px;
     vertical-align: middle;
@@ -254,14 +254,23 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         display: grid;
         flex-flow: column wrap;
         grid-auto-flow: column;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(6, 1fr);
         grid-template-columns: auto auto;
         grid-gap: 15px 40px;
         grid-template: 
-            "name message"
+            "text text"
+            "name type"
             "email message"
             "org message"
-            "phone send";
+            "phone message"
+            ". send";
+        
+        .form-text {
+            grid-area: text;
+            margin-bottom: 10px;
+        }
+
+
         p {
             margin: 0;
             
@@ -271,13 +280,21 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
             } 
         }
 
+        :nth-last-child(4) {
+            grid-area: type;
+        }
+
         :nth-last-child(3) {
             grid-area: message;
         }
 
         :nth-last-child(2) {
+            grid-area: send;
             float: right;
             align-self: end;
+        }
+        .wpcf7-response-output {
+            width: 100%;
         }
         
     }   
@@ -288,11 +305,11 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     grid-column: $full;
     display: grid;
     grid-template-columns: $maingrid;
-    border-top: 4px double rgba(0, 0, 0, 0.1);
+    //border-top: 4px double rgba(0, 0, 0, 0.1);
 
     p {
         grid-column: contents;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 

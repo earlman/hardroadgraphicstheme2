@@ -1,10 +1,10 @@
 @import url(assets/css/style_underscores.css);.content{display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr;grid-template-rows:100px auto auto}
 .site{display:contents}
-@font-face{font-family:Helvetica;src:url("assets/fonts/Helvetica.ttf");font-weight:normal}
-@font-face{font-family:HelveticaNeue;src:url("assets/fonts/HelveticaNeueMedium.ttf");font-weight:normal}
-p,a{font-family:Helvetica}
+@font-face{font-family:Helvetica;src:url("assets/fonts/Helvetica.woff");font-weight:normal}
+@font-face{font-family:HelveticaNeue;src:url("assets/fonts/HelveticaNeueLight.ttf");font-weight:normal}
+p,a{font-family:HelveticaNeue}
 h1,h2,h3,h4,h5,h6{font-family:HelveticaNeue;font-weight:normal;clear:both;text-transform:uppercase;color:#500000}
-button,input[type="button"],input[type="reset"],input[type="submit"]{background-color:#500000;color:white;width:120px;margin:auto;padding:10px;font-family:Helvetica;text-transform:uppercase;font-size:18px;vertical-align:middle;border-top:3px solid #ffb612;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);box-shadow:0 2px 5px 0 rgba(0,0,0,0.26)}
+button,input[type="button"],input[type="reset"],input[type="submit"]{background-color:#500000;color:white;width:120px;margin:auto;padding:10px;font-family:HelveticaNeue;text-transform:uppercase;font-size:18px;vertical-align:middle;border-top:3px solid #ffb612;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);box-shadow:0 2px 5px 0 rgba(0,0,0,0.26)}
 .site-header{display:contents}
 .site-header .site-title{display:none}
 .site-header .site-description{display:none}
@@ -31,13 +31,16 @@ button,input[type="button"],input[type="reset"],input[type="submit"]{background-
 #featured-products .product_gallery figure{margin:10px 0 10px;background-color:white;-webkit-box-shadow:1px 2px 6px rgba(0,0,0,0.1),0 2px 6px rgba(0,0,0,0.15);box-shadow:1px 2px 6px rgba(0,0,0,0.1),0 2px 6px rgba(0,0,0,0.15);border-radius:2px;-webkit-box-flex:0;-ms-flex:0 1 22%;flex:0 1 22%}
 #featured-products .product_gallery img{padding:18px 10px}
 #featured-products .product_gallery figcaption{width:80%;margin:auto;padding-bottom:12px}
-#contact-us [role="form"] form{display:grid;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column wrap;flex-flow:column wrap;grid-auto-flow:column;grid-template-rows:repeat(4,auto);grid-template-columns:auto auto;grid-gap:15px 40px;grid-template:"name message" "email message" "org message" "phone send"}
+#contact-us [role="form"] form{display:grid;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column wrap;flex-flow:column wrap;grid-auto-flow:column;grid-template-rows:repeat(6,1fr);grid-template-columns:auto auto;grid-gap:15px 40px;grid-template:"text text" "name type" "email message" "org message" "phone message" ". send"}
+#contact-us [role="form"] form .form-text{grid-area:text;margin-bottom:10px}
 #contact-us [role="form"] form p{margin:0}
 #contact-us [role="form"] form p input[type="text"],#contact-us [role="form"] form p input[type="email"],#contact-us [role="form"] form p textarea{margin-top:10px;width:100%}
+#contact-us [role="form"] form :nth-last-child(4){grid-area:type}
 #contact-us [role="form"] form :nth-last-child(3){grid-area:message}
-#contact-us [role="form"] form :nth-last-child(2){float:right;-ms-flex-item-align:end;align-self:end}
-#about-us{grid-column:1 / 6;display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr;border-top:4px double rgba(0,0,0,0.1)}
-#about-us p{grid-column:contents;font-size:1.3rem}
+#contact-us [role="form"] form :nth-last-child(2){grid-area:send;float:right;align-self:end}
+#contact-us [role="form"] form .wpcf7-response-output{width:100%}
+#about-us{grid-column:1 / 6;display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr}
+#about-us p{grid-column:contents;font-size:1.2rem}
 .site-footer{grid-column:1 / 6;display:grid;grid-template-columns:1fr 20px [contents] minmax(640px,900px) 20px 1fr;background-color:#500000;color:white;border-top:5px solid #ffb612}
 .site-footer .site-info{grid-column:contents;display:-webkit-box;display:-ms-flexbox;display:flex}
 .site-footer .site-info .widget-title{display:none}
