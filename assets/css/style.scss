@@ -119,6 +119,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     }
 
 
+
     .main-navigation {
         grid-column: $full;
         grid-template-columns: 1fr 20px [contents] minmax(590px, 900px) 55px [extraspace] 20px 1fr;
@@ -129,9 +130,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
         z-index: 3;
         border-top: 5px solid $accent;   
           
-        .sticky {
+        &.sticky {
             position: fixed;
-        }
+        } 
 
         .menu-toggle {
             display: none;
@@ -169,7 +170,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
                 display: block;
                 }
             }
-
 
             .active {
                 background-color: white;
@@ -375,9 +375,15 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
                 }
             }
         }
-
     }
-
+    .copyright {
+        grid-column: contents;
+        grid-row: 2;
+        font-size: 12px;
+        opacity: .5;
+        text-align: right;
+        margin: 5px 0 5px;
+    }
 
 }
 

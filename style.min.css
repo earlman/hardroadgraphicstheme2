@@ -13,7 +13,7 @@ button,input[type="button"],input[type="reset"],input[type="submit"]{background-
 .site-header .site-branding .custom-logo-link{width:320;height:auto;grid-column:2;grid-row:1;padding-top:20px;justify-self:end}
 .site-header .site-branding .header_image{height:150px;width:380px;grid-column:1;grid-row:1;z-index:4}
 .site-header .main-navigation{grid-column:1 / 6;grid-template-columns:1fr 20px [contents] minmax(590px,900px) 55px [extraspace] 20px 1fr;display:grid;background-color:#500000;height:50px;width:100%;z-index:3;border-top:5px solid #ffb612}
-.site-header .main-navigation .sticky{position:fixed}
+.site-header .main-navigation.sticky{position:fixed}
 .site-header .main-navigation .menu-toggle{display:none}
 .site-header .main-navigation div{display:contents}
 .site-header .main-navigation .menu{grid-column:contents / extraspace;display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:0;list-style:none;width:50%;height:100%;justify-self:end}
@@ -53,3 +53,4 @@ button,input[type="button"],input[type="reset"],input[type="submit"]{background-
 .site-footer .site-info #footer-sidebar3 div{margin:0;padding:0;width:80%;float:right}
 .site-footer .site-info #footer-sidebar3 ul{margin:0;padding:0;-webkit-columns:2;columns:2;list-style:none}
 .site-footer .site-info #footer-sidebar3 ul a{text-decoration:none;color:white}
+.site-footer .copyright{grid-column:contents;grid-row:2;font-size:12px;opacity:.5;text-align:right;margin:5px 0 5px}
