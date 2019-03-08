@@ -41,9 +41,8 @@
                     ?>
                 </div>
             </div>
-                
-
 		</div><!-- .site-info -->
+        <p class="copyright">Copyright © npfoundations.dev</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
